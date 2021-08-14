@@ -1,0 +1,41 @@
+.body {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  height: 100vh;
+}
+.background {
+  background-image: url("/assets/img/wave.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  max-width: 250px;
+  text-align: center;
+  padding: 100px 0 0 200px;
+}
+.imgLogin {
+  width: 200px;
+}
+.faIcon {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  padding: 0 0 0 200px;
+  color: #483d8b;
+}
+
+.login-broad {
+  width: 95%;
+}
+.button {
+  height: 40px;
+}
+
+.spiner {
+  margin: 0 auto;
+}
