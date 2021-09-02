@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 import {faUser, faKey } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -13,7 +14,7 @@ export class LoginComponent implements OnInit {
   faKey =faKey;
   form: FormGroup;
   loading = false;
-  constructor( private fb: FormBuilder, private _snackBar: MatSnackBar) {
+  constructor( private fb: FormBuilder, private _snackBar: MatSnackBar, private router: Router) {
     this.form = this.fb.group({
       user: ['', Validators.required],
       password: ['',Validators.required]
@@ -48,8 +49,7 @@ export class LoginComponent implements OnInit {
     this.loading = true;
     setTimeout(() => {
 
-      //redireccionamos al dasborad
-      this.loading = false;
+      this.router.navigate(['dashboard']);
     }, 1500);
   }
 }
