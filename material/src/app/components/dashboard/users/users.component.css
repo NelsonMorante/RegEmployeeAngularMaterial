@@ -1,0 +1,24 @@
+table {
+  width: 100%;
+  margin-top: 10px;
+}
+.iconsTable {
+  text-align: end;
+}
+th {
+  width: 20%;
+}
+
+.iconSearch {
+  cursor: pointer;
+  color: #1878be;
+}
+
+.iconEdit {
+  cursor: pointer;
+  color: #1f516f;
+}
+.iconDelete {
+  cursor: pointer;
+  color: #e15639;
+}
