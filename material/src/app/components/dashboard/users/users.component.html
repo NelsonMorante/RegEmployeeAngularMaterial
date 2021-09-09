@@ -1,6 +1,9 @@
 <div class="container">
   <mat-toolbar>
     <span>Usuario</span>
+    <div class="example-spacer">
+    </div>
+    <button mat-raised-button color="primary" routerLink="/dashboard/create-users">Agregar</button>
   </mat-toolbar>
 
   <div *ngIf="listUser.length > 0 ">

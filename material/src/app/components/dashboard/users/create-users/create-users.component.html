@@ -1,0 +1,49 @@
+<div class="container">
+  <mat-toolbar>
+    <span>Crear Usuario</span>
+  </mat-toolbar>
+
+  <mat-card class="cardCreateUser">
+    <form>
+      <mat-grid-list cols="4" rowHeight="70px">
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+          <mat-form-field class="cardWidth">
+            <mat-label>Usuario</mat-label>
+            <input matInput>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="3" [rowspan]="5" [style.background]="'lightblue'">
+          <img class="imgCreateUser" src="./assets/img/usuario.png">
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+          <mat-form-field class="cardWidth">
+            <mat-label>Nombre</mat-label>
+            <input matInput>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+          <mat-form-field class="cardWidth">
+            <mat-label>Apellido</mat-label>
+            <input matInput>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+          <mat-form-field class="cardWidth">
+            <mat-label>Sexo</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let item of sex" [value]="item">
+                {{item}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+          <button class="buttonAcept" mat-raised-button>Volver</button>
+          <button mat-raised-button color="primary">Aceptar</button>
+        </mat-grid-tile>
+      </mat-grid-list>
+      <br>
+      <br>
+    </form>
+  </mat-card>
+</div>
