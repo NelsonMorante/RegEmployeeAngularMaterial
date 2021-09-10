@@ -24,4 +24,8 @@ export class UserService {
   deleteUser(index: number){
     return this.listUsuarios.splice(index, 1);
   }
+
+  addUser(user: Usuario){
+    this.listUsuarios.unshift(user)
+  }
 }

@@ -48,6 +48,7 @@ export class UsersComponent implements OnInit {
     console.log(index);
     this._usuarioService.deleteUser(index);
     this.loadUsers();
+    
     this._snackBar.open('El usuario fue eliminado exitozamente','', {
       duration: 1500,
       horizontalPosition: 'center',
